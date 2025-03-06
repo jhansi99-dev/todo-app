@@ -1,0 +1,47 @@
+/* styles/TaskList.css */
+.task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.task-item span {
+    font-size: 16px;
+}
+
+.task-item button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.task-item button:hover {
+    background-color: #d63030;
+}
+
+/* Priority Colors */
+.task-item.high {
+    border-left: 5px solid red;
+}
+
+.task-item.medium {
+    border-left: 5px solid orange;
+}
+
+.task-item.low {
+    border-left: 5px solid green;
+}

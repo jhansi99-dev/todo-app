@@ -1,0 +1,40 @@
+/* Centering login & logout forms */
+.login-container, .logout-container {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the form fields */
+.login-form input {
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Style buttons */
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+

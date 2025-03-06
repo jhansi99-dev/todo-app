@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from "react";
+import { useSelector } from "react-redux";
+import Login from "./components/Login";
+import Logout from "./components/Logout";
+import TaskList from "./components/TaskList";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    const authState = useSelector((state) => state.auth); // Debug state
+    console.log("Redux Auth State:", authState); // Check if Redux state is loading
+
+    if (!authState) {
+        return <div>Loading...</div>; // Handle undefined state case
+    }
+
+    return (
+        <div>
+            {authState.isAuthenticated ? (
+                <div>
+                    <Logout />
+                    <TaskList />
+                </div>
+            ) : (
+                <Login />
+            )}
+        </div>
+    );
+};
 
 export default App;
+
+
+
+
+
+
+
