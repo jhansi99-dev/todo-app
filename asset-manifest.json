@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/portfolio/static/js/main.9e779aad.js",
-    "index.html": "/portfolio/index.html",
-    "main.9e779aad.js.map": "/portfolio/static/js/main.9e779aad.js.map"
+    "main.js": "/todo-app/static/js/main.9e779aad.js",
+    "index.html": "/todo-app/index.html",
+    "main.9e779aad.js.map": "/todo-app/static/js/main.9e779aad.js.map"
   },
   "entrypoints": [
     "static/js/main.9e779aad.js"
